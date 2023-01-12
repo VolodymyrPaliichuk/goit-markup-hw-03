@@ -25,6 +25,38 @@ body {
   --secondary-text: #434455;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h5,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  width: 1410px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  outline: solid red;
+}
+
 /*-------------------------------------HEADER-------------------------*/
 
 .header {
@@ -140,7 +172,6 @@ body {
   align-items: center;
   letter-spacing: 0.04em;
   color: var(--main-color);
-  cursor: pointer;
 }
 
 .hero-btn-item:hover,
@@ -269,7 +300,6 @@ body {
   flex: none;
   order: 0;
   flex-grow: 0;
-  cursor: pointer;
 }
 
 .main-btn:hover,
