@@ -64,12 +64,13 @@ img {
 .header {
   background-color: var(--main-color);
   border-bottom: 1px solid #e7e9fc;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .header-container {
   display: flex;
-  padding-top: 24px;
-  padding-bottom: 24px;
+
   align-items: center;
 }
 
@@ -169,7 +170,7 @@ img {
 
 .hero {
   background-color: var(--main-text-color);
-  padding: 180px 15px;
+  padding: 188px;
   text-align: center;
 }
 
@@ -208,9 +209,9 @@ img {
 /*-------------------------------------MAIN-WORK-------------------------*/
 
 .main-section-work {
+  padding-top: 120px;
 }
 .work-list {
-  padding-top: 120px;
   display: flex;
   gap: 24px;
   align-items: center;
@@ -245,6 +246,8 @@ img {
 /*-------------------------------------MAIN-DOING-------------------------*/
 
 .main-section-doing {
+  padding-top: 120px;
+  padding-bottom: 70px;
 }
 .doing-title {
   font-weight: 700;
@@ -254,8 +257,7 @@ img {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--main-text-color);
-  padding-top: 120px;
-  padding-bottom: 70px;
+  margin-bottom: 72px;
 }
 .doing-list {
   display: flex;
@@ -270,6 +272,8 @@ img {
 
 .main-section-team {
   background-color: #f4f4fd;
+  padding-top: 120px;
+  padding-bottom: 72px;
 }
 .team-title {
   font-weight: 700;
@@ -279,8 +283,7 @@ img {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--main-text-color);
-  padding-top: 120px;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 .team-list {
   display: flex;
@@ -289,8 +292,6 @@ img {
 .team-item {
   display: flex;
   flex-direction: column;
-  padding: 0px 0px 32px;
-  gap: 32px;
   background: var(--main-color);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -325,7 +326,19 @@ img {
 }
 
 /*-------------------------------------FILE-PORTFOLIO-------------------------*/
+
+.main-section {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+
 /*-------------------------------------SECTION-BTN-------------------------*/
+.btn-list {
+  margin-bottom: 72px;
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+}
 
 .main-btn {
   font-family: "Roboto";
@@ -340,14 +353,6 @@ img {
   padding: 12px 24px;
 }
 
-.btns-block {
-  padding-top: 96px;
-  padding-bottom: 72px;
-  display: flex;
-  gap: 24px;
-  justify-content: center;
-}
-
 .main-btn:hover,
 .main-btn:focus {
   color: #fff;
@@ -358,6 +363,12 @@ img {
 
 .works {
 }
+
+.works-content {
+  padding-left: 16px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
 .works-list {
   display: flex;
   flex-wrap: wrap;
@@ -365,7 +376,6 @@ img {
   row-gap: 48px;
 }
 .works-item {
-  text-align: center;
   width: calc((100% - 48px) / 3);
 }
 .works-title {
