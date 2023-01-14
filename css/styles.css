@@ -65,11 +65,25 @@ img {
   background-color: var(--main-color);
 }
 
+.header-container {
+  display: flex;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  align-items: center;
+}
+
+.header-navigation {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+
 .header-logo {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   padding: 0px;
+  margin-right: 76px;
 }
 
 .logo-web {
@@ -103,10 +117,10 @@ img {
 
 .header-list {
   padding: 0px;
-  gap: 40px;
-  padding: 0px;
-  gap: 40px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  display: flex;
+  gap: 40px;
+  margin-right: 332px;
 }
 
 .header-link {
@@ -122,6 +136,11 @@ img {
 .header-link:hover,
 .header-link:focus {
   color: #404bbf;
+}
+
+.header-address-list {
+  display: flex;
+  gap: 40px;
 }
 
 .header-mail {
@@ -164,10 +183,9 @@ img {
 }
 
 .hero-btn-item {
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 16px 32px;
-  gap: 10px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  min-width: 169px;
   background: #4d5ae5;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -192,11 +210,16 @@ img {
 }
 .work-list {
   padding-top: 120px;
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.work-item {
   max-width: 264px;
+  width: calc((100% - 72px) / 4);
 }
-.work-item:not(:last-child) {
-  margin-bottom: 24px;
-}
+
 .work-title {
   font-weight: 500;
   font-size: 20px;
@@ -234,9 +257,12 @@ img {
   padding-bottom: 70px;
 }
 .doing-list {
+  display: flex;
+  gap: 24px;
 }
-.doing-item:not(:last-child) {
-  padding-bottom: 24px;
+
+.doing-item {
+  width: calc((100% - 48px) / 3);
 }
 
 /*-------------------------------------MAIN-TEAM-------------------------*/
@@ -247,8 +273,8 @@ img {
 .team-title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.1;
   text-align: center;
+  line-height: 1.1;
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--main-text-color);
@@ -256,6 +282,8 @@ img {
   padding-bottom: 72px;
 }
 .team-list {
+  display: flex;
+  gap: 24px;
 }
 .team-item {
   display: flex;
@@ -266,10 +294,9 @@ img {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
+  width: calc((100% - 72px) / 4);
 }
 .item-title {
-  width: 144px;
-  height: 24px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -281,8 +308,6 @@ img {
   margin-bottom: 8px;
 }
 .item-text {
-  width: 144px;
-  height: 24px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -295,40 +320,31 @@ img {
 .team-content {
   padding-top: 32px;
   padding-bottom: 32px;
+  text-align: center;
 }
 
 /*-------------------------------------FILE-PORTFOLIO-------------------------*/
 /*-------------------------------------SECTION-BTN-------------------------*/
 
-.btn-list {
-  display: flex;
-}
-
 .main-btn {
   font-family: "Roboto";
-  box-sizing: border-box;
-  flex-direction: row;
   background: #f4f4fd;
   border: 1px solid #e7e9fc;
   border-radius: 4px;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #4d5ae5;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
   padding: 12px 24px;
-  margin-bottom: 24px;
 }
 
 .btns-block {
   padding-top: 96px;
   padding-bottom: 72px;
+  display: flex;
+  gap: 24px;
+  justify-content: center;
 }
 
 .main-btn:hover,
@@ -342,8 +358,14 @@ img {
 .works {
 }
 .works-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
 }
 .works-item {
+  text-align: center;
+  width: calc((100% - 48px) / 3);
 }
 .works-title {
   font-weight: 500;
