@@ -46,10 +46,12 @@ button {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .container {
-  width: 1410px;
+  width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
   margin-right: auto;
@@ -147,16 +149,21 @@ img {
 
 .hero {
   background-color: var(--main-text-color);
+  padding: 180px 15px;
+  text-align: center;
 }
+
 .hero-title {
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
   color: var(--main-color);
+  margin: auto;
+  max-width: 500px;
 }
+
 .hero-btn-item {
-  display: flex;
   flex-direction: row;
   align-items: flex-start;
   padding: 16px 32px;
@@ -168,10 +175,10 @@ img {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  display: flex;
   align-items: center;
   letter-spacing: 0.04em;
   color: var(--main-color);
+  margin-top: 48px;
 }
 
 .hero-btn-item:hover,
@@ -184,8 +191,11 @@ img {
 .main-section-work {
 }
 .work-list {
+  padding-top: 120px;
+  max-width: 264px;
 }
-.work-item {
+.work-item:not(:last-child) {
+  margin-bottom: 24px;
 }
 .work-title {
   font-weight: 500;
@@ -205,6 +215,7 @@ img {
   flex: none;
   order: 1;
   flex-grow: 0;
+  margin-top: 8px;
 }
 
 /*-------------------------------------MAIN-DOING-------------------------*/
@@ -219,10 +230,13 @@ img {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--main-text-color);
+  padding-top: 120px;
+  padding-bottom: 70px;
 }
 .doing-list {
 }
-.doing-item {
+.doing-item:not(:last-child) {
+  padding-bottom: 24px;
 }
 
 /*-------------------------------------MAIN-TEAM-------------------------*/
@@ -238,6 +252,8 @@ img {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--main-text-color);
+  padding-top: 120px;
+  padding-bottom: 72px;
 }
 .team-list {
 }
@@ -262,6 +278,7 @@ img {
   flex: none;
   order: 0;
   flex-grow: 0;
+  margin-bottom: 8px;
 }
 .item-text {
   width: 144px;
@@ -275,13 +292,21 @@ img {
   flex-grow: 0;
 }
 
+.team-content {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
 /*-------------------------------------FILE-PORTFOLIO-------------------------*/
 /*-------------------------------------SECTION-BTN-------------------------*/
+
+.btn-list {
+  display: flex;
+}
 
 .main-btn {
   font-family: "Roboto";
   box-sizing: border-box;
-  display: flex;
   flex-direction: row;
   background: #f4f4fd;
   border: 1px solid #e7e9fc;
@@ -292,14 +317,18 @@ img {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.04em;
   color: #4d5ae5;
   flex: none;
   order: 0;
   flex-grow: 0;
+  padding: 12px 24px;
+  margin-bottom: 24px;
+}
+
+.btns-block {
+  padding-top: 96px;
+  padding-bottom: 72px;
 }
 
 .main-btn:hover,
@@ -325,6 +354,7 @@ img {
   flex: none;
   order: 0;
   flex-grow: 0;
+  margin-bottom: 8px;
 }
 .works-text {
   font-size: 16px;
@@ -336,10 +366,17 @@ img {
   flex-grow: 0;
 }
 
+.works-content {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
 /*-------------------------------------FOOTER-------------------------*/
 
 .footer {
   background-color: var(--main-text-color);
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .footer-logo {
@@ -347,6 +384,7 @@ img {
   flex-direction: row;
   align-items: flex-start;
   padding: 0px;
+  margin-bottom: 16px;
 }
 
 .footer-logo-studio {
@@ -371,4 +409,5 @@ img {
   line-height: 24px;
   letter-spacing: 0.02em;
   color: #e7e9fc;
+  max-width: 264px;
 }
