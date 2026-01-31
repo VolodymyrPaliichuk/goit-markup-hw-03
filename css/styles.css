@@ -1,9 +1,10 @@
+
+
 body {
     font-family: 'Roboto', sans-serif;
     color: #2E2F42;
     background-color: #fff;
     line-height: 1.5;
-
 }
 
 a {
@@ -13,16 +14,60 @@ a {
 
 ul {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }   
-
-
-
-
-/* #region Header Navigation */
-
-.header-nav{
-
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
 }
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.container {
+    width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0; 
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+
+/* #region Header */
+.container.header, 
+.header-nav, 
+.nav-list, 
+.header-address, 
+.address-list {display: flex;}
+
+.container.header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.header-nav .logo{margin-right: 76px;
+justify-content: center;}
+.nav-list {gap: 40px
+; margin-right: 332px;}
+.address-list {gap: 40px;}
+
+
+
+
 
 .logo {
 font-family: 'Raleway', sans-serif;
@@ -49,10 +94,6 @@ color: #2E2F42;
     color: #404BBF;
 }
 
-/* #endregion Header Navigation */
-
-/* #region Address */
-
 .header-address {
 font-size: 16px;
 letter-spacing: 0.02em;
@@ -64,13 +105,14 @@ font-style: normal;
     color: #404BBF;
 }
 
-/* #endregion Address */
+/* #endregion Header */
 
 /* #region Hero */
 
 .hero{
 background-color: #2E2F42;
 }
+
 
 .hero-title {
 font-weight: 700;
@@ -79,8 +121,13 @@ line-height: 1.07143;
 letter-spacing: 0.02em;
 text-align: center;
 color: #FFFFFF;
-
+width: 496px;
+margin: 0 auto;
+padding-top: 186px;
+padding-bottom: 48px;
 }
+.buttun-container {display: flex;
+    justify-content: center;}
 
 .hero-button {
 box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
@@ -91,6 +138,9 @@ font-weight: 500;
 font-size: 16px;
 letter-spacing: 0.04em;
 line-height: 1.5;
+margin-bottom: 188px;
+padding: 16px 32px;
+border-radius: 4px;
 }
 
 .hero-button:hover, .hero-button:focus {
@@ -100,21 +150,14 @@ line-height: 1.5;
 
 /* #region features */
 
-.features {
-
-
-}
-
-.features-title {
-
-}
-
 .features-list {
-
+display: flex;
+margin: 120px 0;
+gap: 24px;
 }
 
 .features-item {
-
+width: calc((100% - (24px * 3)) / 4);
 }
 
 .features-item-title {
@@ -122,6 +165,7 @@ font-weight: 500;
 font-size: 20px;
 line-height: 1.2;
 letter-spacing: 0.02em;
+margin-bottom: 8px;
 }
 
 .features-item-text {
@@ -144,15 +188,27 @@ font-size: 36px;
 line-height: 1.11111;
 letter-spacing: 0.02em;
 text-align: center;
+padding-top: 120px;
+padding-bottom: 72px;
 }
 
 .team-list {
+display: flex;
+gap: 24px;
+padding-bottom: 120px;
 
 }   
 
 .team-item {
 background-color: #fff;
+width: calc((100% - (24px * 3)) / 4);
+box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+background: #fff;
 }   
+
+.team-info {
+padding: 32px 0;
+}
 
 .team-name {
 font-weight: 500;
@@ -160,6 +216,7 @@ font-size: 20px;
 line-height: 1.2;
 letter-spacing: 0.02em;
 text-align: center;
+padding-bottom: 8px;
 }
 
 .team-position {
@@ -183,10 +240,20 @@ font-size: 36px;
 line-height: 1.11111;
 letter-spacing: 0.02em;
 text-align: center;
+padding-top: 120px;
+padding-bottom: 72px;
 }   
 
-.portfolio-list {
+.portfolio-item-description {border-bottom: 1px solid #e7e9fc;
+border-left: 1px solid #e7e9fc;
+border-right: 1px solid #e7e9fc;
+padding: 32px 16px;}
 
+.portfolio-list {
+display: flex;
+flex-wrap: wrap;
+gap: 48px 24px;
+padding-bottom: 120px;
 }   
 
 .address-item {
@@ -198,6 +265,7 @@ font-weight: 500;
 font-size: 20px;
 line-height: 1.2;
 letter-spacing: 0.02em;
+margin-bottom: 8px;
 }
 
 .projects-category{
@@ -213,6 +281,13 @@ color: #434455;
 .footer {
 background-color: #2E2F42;
 }
+.container.footer{
+     display: flex;
+     flex-direction: column;
+     padding: 100px 0;
+
+ .logo{margin-bottom: 16px;
+}
 
 .logo-studio{
     color: #F4F4FD;
@@ -226,6 +301,7 @@ background-color: #2E2F42;
 font-size: 16px;
 letter-spacing: 0.02em;
 color: #F4F4FD;
+width: 264px;
 }
 
 /* #endregion Footer */
