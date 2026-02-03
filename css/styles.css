@@ -49,12 +49,12 @@ img {
 
 /* #region Header */ 
 
+.header {border-bottom: 1px solid #e7e9fc}
 
 .header-flex-box {
     display: flex;
     justify-content: space-between;
     padding: 24px 0;
-    border-bottom: 1px solid #e7e9fc
 }
 
 .header-nav {
@@ -264,7 +264,7 @@ padding: 32px 16px;}
     gap: 48px 24px;
 }   
 .portfolio-item {
-    width: calc((100% - (24px * 5)) / 3);
+    width: calc((100% - (24px * 2)) / 3);
 }
 
 .portfolio-projects{
@@ -296,7 +296,7 @@ padding-bottom: 100px;
      flex-direction: column;
      }
 
- .footer-logo{padding-bottom: 16px;
+ .footer-logo{margin-bottom: 16px;
     font-family: 'Raleway', sans-serif;
 font-weight: 700;
 font-size: 18px;
