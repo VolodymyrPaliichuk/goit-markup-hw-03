@@ -54,18 +54,25 @@ img {
 .header-flex-box {
     display: flex;
     justify-content: space-between;
-    padding: 24px 0;
 }
 
 .header-nav {
     display: flex;
+   align-items: center;
 }
 
 .nav-list {display: flex;
 gap: 40px;}
 
-.nav-item a {
-    padding: 24px 0;
+.nav-item{
+    display: block;    
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+.address-link {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .address-list {display: flex;
@@ -79,7 +86,7 @@ font-size: 18px;
 line-height: 1.16667;
 letter-spacing: 0.03em;
 text-transform: uppercase;
-padding-right: 76px;
+margin-right: 76px;
 }
 
 .logo-web {
