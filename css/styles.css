@@ -54,6 +54,7 @@ img {
     display: flex;
     justify-content: space-between;
     padding: 24px 0;
+    border-bottom: 1px solid #e7e9fc
 }
 
 .header-nav {
@@ -156,9 +157,10 @@ outline: none;
 
 /* #region features */
 
+.features {padding: 120px 0;}
+
 .features-list {
 display: flex;
-padding: 120px 0;
 gap: 24px;
 }
 
@@ -209,10 +211,11 @@ background-color: #fff;
 width: calc((100% - (24px * 3)) / 4);
 box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 background: #fff;
+border-radius: 0 0 4px 4px;
 }   
 
 .team-info {
-padding: 32px 0;
+padding: 32px 16px;
 }
 
 .team-name {
@@ -256,13 +259,12 @@ border-right: 1px solid #e7e9fc;
 padding: 32px 16px;}
 
 .portfolio-list {
-display: flex;
-flex-wrap: wrap;
-gap: 48px 24px;
+    flex-wrap: wrap;
+    display: flex;
+    gap: 48px 24px;
 }   
-
-.address-item {
-
+.portfolio-item {
+    width: calc((100% - (24px * 5)) / 3);
 }
 
 .portfolio-projects{
